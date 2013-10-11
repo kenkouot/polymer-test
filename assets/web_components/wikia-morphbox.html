@@ -1,14 +1,29 @@
-<polymer-element name="wikia-morphbox">
+<polymer-element 
+	name="wikia-morphbox" 
+	attributes="textcolor bgcolor"
+	on-mouseover="yellAtLiz"
+	on-click="callKenNames"
+>
 	<template>
-		<div class="morphhox">
-			<h1>Hi, this is a morphbox</h1>
+		<div id="test" class="morphhox" style="background: {{ bgcolor }}; color: {{ textcolor }}">
+			<h1>Hi, this is a morphbox created by {{ creator }}.</h1>
 		</div>
 	</template>
 	<script>
 		Polymer('wikia-morphbox', {
 				creator: 'Ken',
 				created: function() {
-				console.log(this);
+					var self = ( this.$.test.impl );
+					this.$self = $( self );
+				},
+				enteredView: function() {
+				  console.log('Entered View');
+				},
+				yellAtLiz: function() {
+					console.log(arguments);
+				},
+				callKenNames: function() {
+				alert('ken is a poo head');
 				}
 		});
 	</script>
