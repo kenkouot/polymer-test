@@ -1,0 +1,24 @@
+<polymer-element name="wikia-partytime">
+	<template>
+		<div id="partytime">
+			<img src="http://25.media.tumblr.com/tumblr_lrn9b5m2Dx1qgwi7to1_250.gif">
+		</div>
+		<button id="hammertime">Hammer time!</button>
+	</template>
+	<script>
+		Polymer( 'wikia-partytime', {
+			created: function() {
+				var hammer = this.$.partytime;
+				this.$.hammertime.addEventListener( 'click', function(){
+					hammer.style.display = "block";
+				});
+			}
+		})
+	</script>
+	<style>
+		#partytime {
+			display: none;
+		}
+	</style>
+</polymer-element>
+
