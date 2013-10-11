@@ -1,0 +1,20 @@
+{
+  "name": "web_components_hack",
+  "version": "0.0.0",
+  "authors": [
+    "Kenneth Kouot <kenneth@wikia-inc.com>"
+  ],
+  "description": "foolin' around",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "~0.0.20131010"
+  }
+}
