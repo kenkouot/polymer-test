@@ -4,3 +4,4 @@ Using Polymer, SailsJS
 * Install Node.js http://nodejs.org/dist/v0.10.20/node-v0.10.20.pkg
 * Run `$ sudo npm install -l`
 * Run `$ bower install`
+* Run `forever -w app.js` from within the project root directory
